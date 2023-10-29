@@ -1,9 +1,19 @@
-<div class="container border border-dark-subtle p-2">
+<form class="container border border-dark-subtle p-2 mb-4 mt-2">
     <p>Type a word</p>
 
     <input 
     type="text"
     class="form-control mb-1"
     placeholder="Please type a word"
+    #sentWord
     />
-</div>
+
+    <button
+        class="btn btn-primary"
+        type="submit"
+        (click)="onSubmitWord(sentWord.value)"
+        >Submit
+    </button>
+
+       
+</form>
